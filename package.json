@@ -1,0 +1,55 @@
+{
+  "name": "towebp-webpack-plugin",
+  "version": "0.0.1",
+  "description": "Webpack plugin for converting images to webp format",
+  "main": "src/index.js",
+  "keywords": [
+    "webpack",
+    "webp",
+    "plugin"
+  ],
+  "author": "nally.lin",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest",
+    "commit": "git-cz",
+    "release": "standard-version"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "pre-push": "npm run test"
+    }
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "dependencies": {
+    "imagemin-webp": "^5.1.0",
+    "lodash.clonedeep": "^4.5.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.7.7",
+    "@babel/preset-env": "^7.7.7",
+    "@commitlint/cli": "^8.3.4",
+    "@commitlint/config-conventional": "^8.3.4",
+    "@types/jest": "^24.0.25",
+    "commitizen": "^4.0.3",
+    "cz-conventional-changelog": "^3.0.2",
+    "file-loader": "^5.0.2",
+    "file-type": "^13.0.3",
+    "fs-extra": "^8.1.0",
+    "husky": "^4.0.6",
+    "jest": "^24.9.0",
+    "standard-version": "^7.0.1",
+    "url-loader": "^3.0.0",
+    "webpack": "^3.6.0"
+  }
+}
