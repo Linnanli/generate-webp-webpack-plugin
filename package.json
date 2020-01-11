@@ -9,6 +9,10 @@
     "plugin"
   ],
   "author": "nally.lin",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Linnanli/generate-webp-webpack-plugin.git"
+  },
   "license": "MIT",
   "scripts": {
     "test": "jest",
