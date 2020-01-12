@@ -17,7 +17,8 @@
   "scripts": {
     "test": "jest",
     "commit": "git-cz",
-    "release": "standard-version"
+    "release": "standard-version",
+    "report-coverage": "cat ./coverage/lcov.info | coveralls"
   },
   "husky": {
     "hooks": {
@@ -46,6 +47,7 @@
     "@commitlint/config-conventional": "^8.3.4",
     "@types/jest": "^24.0.25",
     "commitizen": "^4.0.3",
+    "coveralls": "^3.0.9",
     "cz-conventional-changelog": "^3.0.2",
     "file-loader": "^5.0.2",
     "file-type": "^13.0.3",
