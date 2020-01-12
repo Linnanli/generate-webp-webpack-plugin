@@ -4,4 +4,7 @@
   <a href="https://www.travis-ci.org/Linnanli/generate-webp-webpack-plugin">
     <img alt="Build status" src="https://www.travis-ci.org/Linnanli/generate-webp-webpack-plugin.svg?branch=master">
   </a>
+  <a href='https://coveralls.io/github/Linnanli/generate-webp-webpack-plugin?branch=master'>
+    <img alt='Coverage Status' src='https://coveralls.io/repos/github/Linnanli/generate-webp-webpack-plugin/badge.svg?branch=master'/>
+  </a>
 </p>
