@@ -8,3 +8,8 @@
     <img alt='Coverage Status' src='https://coveralls.io/repos/github/Linnanli/generate-webp-webpack-plugin/badge.svg?branch=master'/>
   </a>
 </p>
+<p align="center">
+  <a href="https://github.com/Linnanli/generate-webp-webpack-plugin/blob/master/README_zh-CN.md">
+     📘中文文档
+  </a>
+</p>
