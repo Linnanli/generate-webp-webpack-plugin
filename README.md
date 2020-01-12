@@ -1,5 +1,7 @@
-# generate-webp-webpack-plugin
-
-[![Build Status](https://www.travis-ci.org/Linnanli/generate-webp-webpack-plugin.svg?branch=master)](https://www.travis-ci.org/Linnanli/generate-webp-webpack-plugin)
-
-webpack plugin of generate webp format file
+<h1 align="center" style="border-bottom: none;">generate-webp-webpack-plugin</h1>
+<h3 align="center">webpack plugin of generate webp format file</h3>
+<p align="center">
+  <a href="https://www.travis-ci.org/Linnanli/generate-webp-webpack-plugin">
+    <img alt="Build status" src="https://www.travis-ci.org/Linnanli/generate-webp-webpack-plugin.svg?branch=master">
+  </a>
+</p>
