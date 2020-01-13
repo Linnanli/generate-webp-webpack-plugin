@@ -5,16 +5,6 @@ import generateWebpackSource from './build/index'
 import config from './build/config'
 import fs from 'fs-extra'
 
-describe('test utils', () => {
-    test('type validate', () => {
-        const func = function (){}
-        expect(type.isFunction(func)).toBeTruthy()
-        const obj = {}
-        expect(type.isPlainObject(obj)).toBeTruthy()
-        expect(type.isRegExp(/\s/)).toBeTruthy()
-    })
-})
-
 describe('test plugin', () => {
     let webpackSource
     beforeAll(() => {
