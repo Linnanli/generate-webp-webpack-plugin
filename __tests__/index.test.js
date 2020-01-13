@@ -17,7 +17,7 @@ describe('test utils', () => {
 
 describe('test plugin', () => {
     let webpackSource
-    beforeEach(() => {
+    beforeAll(() => {
         webpackSource = generateWebpackSource({
             format: '[name].[ext].webp',
             webpOptions: {
@@ -25,9 +25,10 @@ describe('test plugin', () => {
                 quality: 80
             }
         })
+        return webpackSource.deleteTestBuildedDir()
     })
 
-    afterEach(() => {
+    afterAll(() => {
         return webpackSource.deleteTestBuildedDir()
     })
 
