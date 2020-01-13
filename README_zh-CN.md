@@ -16,7 +16,7 @@
 
 # 支持webpack版本
 
-暂时只支持webpack3.0+, 后续会尽快支持webpack4.0+
+支持webpack3.0+、webpack4.0+
 
 # 安装
 
