@@ -4,8 +4,37 @@ import type from '../src/utils/type'
 import generateWebpackSource from './build/index'
 import config from './build/config'
 import fs from 'fs-extra'
+import GenerateWebpackPlugin from '../src/index'
 
 describe('test plugin', () => {
+    test('parameter check', () => {
+        expect(() => {
+            new GenerateWebpackPlugin({
+                test: '\\.(png|jpe?g)$'
+            })
+        }).toThrow(TypeError)
+    })
+
+    test('test _isMatch function', () => {
+        const plugin1 = new GenerateWebpackPlugin({
+            test: /\.(png|jpe?g)$/
+        })
+        
+        expect(plugin1._isMatch('./img/img.gif')).toBeFalsy()
+        expect(plugin1._isMatch('./img/img.png')).toBeTruthy()
+
+        const plugin2 = new GenerateWebpackPlugin({
+            test(pathStr) {
+                return /\.(png|jpe?g)$/.test(pathStr)
+            }
+        })
+
+        expect(plugin2._isMatch('./img/img.gif')).toBeFalsy()
+        expect(plugin2._isMatch('./img/img.png')).toBeTruthy()
+    })
+})
+
+describe('test generate webp', () => {
     let webpackSource
     beforeAll(() => {
         webpackSource = generateWebpackSource({
