@@ -11,7 +11,7 @@ const defaultOpts = {
     }
 }
 
-module.exports = class ToWebpWebpackPlugin {
+module.exports = class GenerateWebpWebpackPlugin {
     constructor(opts = {}) {
         this.opts = this._mergeConfig(defaultOpts, opts)
         if (!type.isRegExp(this.opts.test) && !type.isFunction(this.opts.test)) {
@@ -20,16 +20,26 @@ module.exports = class ToWebpWebpackPlugin {
     }
 
     async apply(compiler) {
-        compiler.plugin('emit', async (compilation, next) => {
-            for (const assetPath in compilation.assets) {
-                if (!this._isMatch(assetPath)) continue
-                const targetPath = this._formatPath(assetPath)
-                if (compilation.assets[targetPath]) continue
-                const source = await this._createWebpSource(compilation.assets[assetPath])
-                compilation.assets[targetPath] = source
-            }
-            next()
-        })
+        if (compiler.hooks) {
+            compiler.hooks.emit.tapAsync({ name: this.constructor.name }, (compilation, next) => {
+                this._processAssets(compilation, next)
+            })
+        } else {
+            compiler.plugin('emit', async (compilation, next) => {
+                this._processAssets(compilation, next)
+            })
+        }
+    }
+
+    async _processAssets(compilation, next) {
+        for (const assetPath in compilation.assets) {
+            if (!this._isMatch(assetPath)) continue
+            const targetPath = this._formatPath(assetPath)
+            if (compilation.assets[targetPath]) continue
+            const source = await this._createWebpSource(compilation.assets[assetPath])
+            compilation.assets[targetPath] = source
+        }
+        next()
     }
 
     async _createWebpSource(raw) {
