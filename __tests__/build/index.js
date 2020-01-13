@@ -1,5 +1,5 @@
 import webpackConfig from './webpack.config'
-import CustomWebpackPlugin from '../../src/index'
+import GenerateWebpackPlugin from '../../src/index'
 import webpack from 'webpack'
 import fs from 'fs-extra'
 import config from './config'
@@ -9,7 +9,7 @@ function deleteTestBuildedDir() {
 }
 
 export default function generateWebpackSource(pluginOptions) {
-    const plugin = new CustomWebpackPlugin(pluginOptions)
+    const plugin = new GenerateWebpackPlugin(pluginOptions)
     webpackConfig.plugins = [
         plugin
     ]
