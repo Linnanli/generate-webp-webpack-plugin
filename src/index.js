@@ -25,7 +25,7 @@ module.exports = class GenerateWebpWebpackPlugin {
                 this._processAssets(compilation, next)
             })
         } else {
-            compiler.plugin('emit', async (compilation, next) => {
+            compiler.plugin('emit', (compilation, next) => {
                 this._processAssets(compilation, next)
             })
         }
