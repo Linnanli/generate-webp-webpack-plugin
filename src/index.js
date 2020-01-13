@@ -15,7 +15,7 @@ module.exports = class GenerateWebpWebpackPlugin {
     constructor(opts = {}) {
         this.opts = this._mergeConfig(defaultOpts, opts)
         if (!type.isRegExp(this.opts.test) && !type.isFunction(this.opts.test)) {
-            throw new TypeError('test参数必须是正则表达式或者函数')
+            throw new TypeError('test parameter must be a regExp or Function')
         }
     }
 
