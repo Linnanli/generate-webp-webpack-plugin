@@ -18,6 +18,9 @@
     "test": "jest",
     "commit": "git-cz",
     "release": "standard-version",
+    "major": "standard-version -r major",
+    "minor": "standard-version -r minor",
+    "patch": "standard-version -r patch",
     "report-coverage": "cat ./coverage/lcov.info | coveralls"
   },
   "husky": {
