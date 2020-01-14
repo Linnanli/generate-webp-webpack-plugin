@@ -1,5 +1,6 @@
 /__tests__/
 /coverage/
+/docs/
 /node_modules/
 /dist/
 .babelrc
