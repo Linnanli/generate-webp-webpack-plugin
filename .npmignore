@@ -6,5 +6,8 @@
 .babelrc
 .gitignore
 .npmignore
+.travis.yml
+CHANGELOG.md
 jest.config.js
+LICENSE
 yarn.lock
