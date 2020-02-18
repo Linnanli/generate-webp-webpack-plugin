@@ -7,6 +7,7 @@
   <a href='https://coveralls.io/github/Linnanli/generate-webp-webpack-plugin?branch=master'>
     <img alt='Coverage Status' src='https://coveralls.io/repos/github/Linnanli/generate-webp-webpack-plugin/badge.svg?branch=master'/>
   </a>
+  <img alt="NPM" src="https://img.shields.io/npm/l/generate-webp-webpack-plugin">
 </p>
 
 # 支持webpack版本
