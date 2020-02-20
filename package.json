@@ -40,7 +40,7 @@
     }
   },
   "dependencies": {
-    "imagemin-webp": "^5.1.0",
+    "imagemin-webp-mirror": "^5.1.0",
     "lodash.clonedeep": "^4.5.0"
   },
   "devDependencies": {
