@@ -1,5 +1,5 @@
 const type = require('./utils/type')
-const imageminWebp = require('imagemin-webp')
+const imageminWebp = require('imagemin-webp-copy')
 const cloneDeep = require('lodash.clonedeep')
 const path = require('path')
 

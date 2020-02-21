@@ -2555,10 +2555,10 @@ currently-unhandled@^0.4.1:
   dependencies:
     array-find-index "^1.0.1"
 
-cwebp-bin-mirror@^5.1.0:
+cwebp-bin-copy@^5.1.0:
   version "5.1.0"
-  resolved "https://registry.npmjs.org/cwebp-bin-mirror/-/cwebp-bin-mirror-5.1.0.tgz#493751ca7fbfd833240c24fcb3851924f896dde0"
-  integrity sha512-6k0urpqyyUizQUfpWx91Lt92qZinMzzBxF+ehqMkz6FrmK+hfWF+EMzmO414Kyod7VYbb1mLAdgFGfA68qV3NQ==
+  resolved "https://registry.npmjs.org/cwebp-bin-copy/-/cwebp-bin-copy-5.1.0.tgz#1042d1f86f6abcaa5f4e97cd420591ee6cb92501"
+  integrity sha512-uBEPLQN8BIxEUBwN6I/yJ3tC5dRS/MrVCs6yA6PSVldOUg/UbSdv7iTdjtTXkiG24hPTB6Jnf4a90zbrPoJoOw==
   dependencies:
     bin-build "^3.0.0"
     bin-wrapper "^4.0.1"
@@ -3927,12 +3927,12 @@ iferr@^0.1.5:
   resolved "https://registry.npm.taobao.org/iferr/download/iferr-0.1.5.tgz#c60eed69e6d8fdb6b3104a1fcbca1c192dc5b501"
   integrity sha1-xg7taebY/bazEEofy8ocGS3FtQE=
 
-imagemin-webp-mirror@^5.1.0:
+imagemin-webp-copy@^5.1.0:
   version "5.1.0"
-  resolved "https://registry.npmjs.org/imagemin-webp-mirror/-/imagemin-webp-mirror-5.1.0.tgz#47ec91f4f71dde7ccaa79e4f16807bb5ec20e7c7"
-  integrity sha512-rkguGZ1J4my0txmDujQwsUs4f5f6eJwqSF0YDyaGAlMcEJ+/pQ9GC2yRY4MY9rBDpPYwY0eU8xSgrRKMUsIl7w==
+  resolved "https://registry.npmjs.org/imagemin-webp-copy/-/imagemin-webp-copy-5.1.0.tgz#bf1a7f664d29ad3f919e3c2ab69489fe0aff2fcf"
+  integrity sha512-LqTSfkfQx0JrrH2SexURYLtrkK0pyuSj00XtQ2d6lUtbE5Gbw2aarFi3S0LygFUBepht//i4TbodFRQ2F44elA==
   dependencies:
-    cwebp-bin-mirror "^5.1.0"
+    cwebp-bin-copy "^5.1.0"
     exec-buffer "^3.0.0"
     is-cwebp-readable "^3.0.0"
 
