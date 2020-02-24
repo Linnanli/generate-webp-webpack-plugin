@@ -185,3 +185,6 @@ bg.jpg图片在原本是221kb
 
 ![webp-compatible](./docs/imgs/webp-img2.png)
 
+# 联系作者
+
+如果有较紧急的问题或者一些有关于开源代码的idea可以[联系作者](https://github.com/Linnanli/blog).
