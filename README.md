@@ -18,8 +18,11 @@
 
 针对国内用户下载缓慢、下载失败的问题或者内网隔离用户，提供了为cwebp-bin二进制文件配置镜像下载地址的功能。
 
-* 通过环境变量: `$ CWEBP_BINARY_SITE=https://npm.taobao.org/mirrors/cwebp-bin yarn install`
-* (推荐)通过`.npmrc`配置: `$ echo "cwebp_binary_site=https://npm.taobao.org/mirrors/cwebp-bin" >> .npmrc`
+通过在`.npmrc`中配置变量: 
+
+* 手动写入: `cwebp_binary_site=https://npm.taobao.org/mirrors/cwebp-bin`
+
+* 通过`shell`写入: `$ echo "cwebp_binary_site=https://npm.taobao.org/mirrors/cwebp-bin" >> .npmrc`
 
 # 安装
 
