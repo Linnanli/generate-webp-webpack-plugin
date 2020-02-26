@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.1.0](https://github.com/Linnanli/generate-webp-webpack-plugin/compare/v0.0.3...v0.1.0) (2020-02-26)
+
+
+### Features
+
+* **package.json:** support Node.js 8.16.0 ([bb34de8](https://github.com/Linnanli/generate-webp-webpack-plugin/commit/bb34de83bbf4e39cc0f63b4178442f853968a91b))
+
 ### [0.0.3](https://github.com/Linnanli/generate-webp-webpack-plugin/compare/v0.0.2...v0.0.3) (2020-02-24)
 
 ### 0.0.2 (2020-02-21)

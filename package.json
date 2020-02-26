@@ -1,6 +1,6 @@
 {
   "name": "generate-webp-webpack-plugin",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "description": "Webpack plugin for converting images to webp format",
   "main": "src/index.js",
   "keywords": [
