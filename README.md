@@ -24,6 +24,12 @@
 
 * 通过`shell`写入: `$ echo "cwebp_binary_site=https://npm.taobao.org/mirrors/cwebp-bin" >> .npmrc`
 
+# 服务端需要注意的问题
+
+请求服务端返回`webp`图片，必须注意服务端需要定义`webp`图片的`MIME`。
+
+也就是`HTTP Response Headers`必须返回`Content-Type: image/webp`。
+
 # 安装
 
 ## npm
